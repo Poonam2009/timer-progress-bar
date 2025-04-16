@@ -2,23 +2,6 @@ import { useEffect, useState } from "react";
 
 const TimerProgressBar = ({ duration = 5000, onComplete }) => {
   const [progressBar, setProgressBar] = useState(0);
-
-  //   useEffect(() => {
-  //     const totalStep = 100;
-  //     const stepTime = duration / totalStep;
-  //     let currentStep = 0;
-
-  //     const interval = setInterval(() => {
-  //       currentStep += 1;
-  //       setProgressBar(currentStep);
-
-  //       if (currentStep >= totalStep) {
-  //         clearInterval(interval);
-  //         onComplete?.();
-  //       }
-  //     }, stepTime);
-  //     return () => clearInterval(interval);
-  //   }, [duration, onComplete]);
   useEffect(() => {
     const totalStep = 100;
     const stepTime = duration / totalStep;
